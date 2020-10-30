@@ -1,1 +1,1 @@
-# sanity-nextjs-landing-pages-studio
+# sanity-gatsby-blog-studio

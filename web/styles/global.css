@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    margin-bottom: 4rem;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.py-2{
+    padding: 0 2.5rem;
+}
+#box-image {
+    height: 700px;
+    background-image: url('/index-main.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+
+}
+.box_index {
+    margin-top: -180px;
+    height: 200px;
+    border-radius: 10px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.light-green{
+    background: #6BA75C;
+}
+.light-red{
+    background:#DD7052;
+}
+
+.box_index h5 {
+    color: white!important;
+    margin:0;
+    padding: 0;
+}
+
+
+.box_index input {
+    color: white!important;
+    font-size: 18px!important;
+}
+input::placeholder{
+    color: #eee!important;
+}
+input:focus{
+    border: none!important;
+    box-shadow: none!important;
+}
+input:active{
+    border: none!important;
+    box-shadow: none!important;
+}
+.full-with-column{
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.counter {
+    font-size: 28px;
+    color: white;
+}
+.flex {
+    display: flex;
+}
+.flex-end {
+    flex-direction: row-reverse;
+}
+.full-with{
+    width: 100%;
+}
+.rtl {
+    direction: rtl;
+}
+.px-1{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+.menu-container{
+    font-size: 18px;
+    position: relative;
+}
+.menu-title {
+    cursor: pointer;
+}
+.menu-items{
+    width: 200px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 4px 4px #eee;
+    position: absolute;
+    left: -140px;  
+    top: 40px;
+}
+.menu-item {
+    transition: 200ms;
+    border-radius: 10px;
+}
+.menu-item:hover {
+    background-color: #eee;
+}
+.menu-item a {
+    padding: 1rem;
+    display: block;
+}
+
+.tent-card{
+    margin-top: 3rem;
+    background: white;
+    padding: 4px;   
+    border-radius: 10px;
+    box-shadow: 0 3px 5px 5px #eee;
+}
