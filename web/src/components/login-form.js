@@ -2,48 +2,28 @@ import { useState } from "react";
 import Router from "next/router";
 import { Magic } from "magic-sdk";
 import { useForm } from "react-hook-form";
-
-const LoginForm = () => {
+import {Input} from 'baseui/input'
+import { Button } from 'baseui/button'
+import {authUser} from '../utils'
+const LoginForm = (props) => {
   const [errorMessage, setErrorMessage] = useState("");
 
   const { handleSubmit, register, errors } = useForm();
 
   const onSubmit = handleSubmit(async (formData) => {
     if (errorMessage) setErrorMessage("");
-
-    try {
-      const magic = new Magic(process.env.NEXT_PUBLIC_MAGIC_PUBLISHABLE_KEY);
-      const didToken = await magic.auth.loginWithMagicLink({
-        email: formData.email,
-      });
-      const res = await fetch("/api/login", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: "Bearer " + didToken,
-        },
-        body: JSON.stringify(formData),
-      });
-      if (res.status === 200) {
-        Router.push("/");
-      } else {
-        throw new Error(await res.text());
-      }
-    } catch (error) {
-      console.error("An unexpected error occurred:", error);
-      setErrorMessage(error.message);
-    }
-  });
+    authUser(formData.email, props.onLoginSucess)
+    });
 
   return (
     <form onSubmit={onSubmit}>
       <div>
         <label>Email</label>
-        <input
+        <Input
           type="email"
           name="email"
           placeholder="hello@example.com"
-          ref={register({ required: "Email is required" })}
+          inputRef={register({ required: "Email is required" })}
         />
         {errors.email && (
           <div role="alert" className="error">
@@ -58,7 +38,7 @@ const LoginForm = () => {
       </div>
 
       <div className="submit">
-        <button type="submit">Sign up / Log in</button>
+        <Button type="submit">Sign up / Log in</Button>
       </div>
     </form>
   );

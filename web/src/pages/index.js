@@ -7,7 +7,7 @@ import LoginAndCreate from "../components/LoginAndCreate";
 import { useUser } from "../utils/hooks";
 
 export default (props) => {
-
+  
   const user = useUser();
 
   console.log(user)

@@ -64,7 +64,7 @@ export default () => {
                 onRequestClose={() => router.push('/')}
                 style={customStyles}
             >
-                <Tent name={router.query.name} modal/>
+                <Tent name={router.query.name} showAsModal/>
             </Modal>
         </>
     )

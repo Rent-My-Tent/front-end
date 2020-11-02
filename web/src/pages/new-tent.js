@@ -20,7 +20,6 @@ import { faRedo, faDollarSign} from '@fortawesome/free-solid-svg-icons'
 export default (props) => {
 
   const user = useUser({ redirectTo: "/" });
-
   const { state, dispatch } = useContext(Store);
   const [tentName, setTentName] = useState("");
   const [tentIdentifire, setTentIdentifire] = useState("");
@@ -33,7 +32,7 @@ export default (props) => {
   useEffect(() => {
     // set current document id 
     async function setTentId() {
-      
+
       const query = `*[ _type == 'tent' && published == false && owner == '${user.email}' ]` 
 
       const result = await sanityClient.fetch(query);
@@ -200,3 +199,6 @@ export default (props) => {
     </main>
   );
 };
+
+// custom file uploader 
+// 

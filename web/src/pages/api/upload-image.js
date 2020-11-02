@@ -16,7 +16,6 @@ export const config = {
 export default async (req, res) => {
   const callback = async (err, { filename, tentId }, { file }) => {
 
-    console.log(file)
 
     const filePath = createReadStream(file.path);
     sanityClient.assets

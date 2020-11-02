@@ -67,7 +67,7 @@ input:active{
     align-items: center;
     justify-content: space-between;
 }
-.counter {
+.countdown {
     font-size: 28px;
     color: white;
 }
@@ -125,4 +125,7 @@ ul{
     padding: 4px;   
     border-radius: 10px;
     box-shadow: 0 3px 5px 5px #eee;
+}
+hr{
+    opacity: 0.2;
 }

@@ -10,6 +10,8 @@ import category from './documents/category'
 import post from './documents/post'
 import siteSettings from './documents/siteSettings'
 import tent from './documents/tent'
+import brand from './documents/brand'
+import reservations from './documents/reservations'
 // Object types
 import bodyPortableText from './objects/bodyPortableText'
 import bioPortableText from './objects/bioPortableText'
@@ -29,7 +31,9 @@ export default createSchema({
     tent,
     siteSettings,
     post,
+    brand,
     category,
+	reservations,
     author,
     mainImage,
     authorReference,

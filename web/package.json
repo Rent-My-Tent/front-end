@@ -17,6 +17,7 @@
         "axios": "^0.21.0",
         "baseui": "^9.102.0",
         "cookie": "^0.4.1",
+        "eslint-plugin-react": "^7.21.5",
         "form-data": "^3.0.0",
         "formidable": "^1.2.2",
         "loadash": "^1.0.0",
@@ -31,6 +32,7 @@
         "react-icons": "^3.11.0",
         "react-modal": "^3.11.2",
         "react-slick": "^0.27.12",
+        "sass": "^1.28.0",
         "styletron-engine-atomic": "^1.4.6",
         "styletron-react": "^5.2.7",
         "swr": "^0.2.3"

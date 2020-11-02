@@ -7,7 +7,7 @@ import {
 
 import Link from "next/link";
 import { useUser } from "../utils/hooks";
-import Menu from "../components/Menu";
+import Menu from "./Menu";
 const overrides = {
   Root: {
     style: {
@@ -19,7 +19,7 @@ const overrides = {
 };
 
 export default () => {
-  const user = useUser({ redirectTo: "/" });
+  // const user = useUser({ redirectTo: "/" });
 
   const items  = [
     {label: 'example@gmail.com', href:'/'},
@@ -46,7 +46,8 @@ export default () => {
           <StyledNavigationItem>
             <div style={{paddingRight: '3rem'}}>
 
-            { user && <Menu title='Menu' items={items} />}            </div>
+            {/* { user && <Menu title='Menu' items={items} />}      */}
+                   </div>
           </StyledNavigationItem>
         </StyledNavigationList>
       </HeaderNavigation>
