@@ -36,7 +36,7 @@ export default (props) => {
       const query = `*[ _type == 'tent' && published == false && owner == '${user.email}' ]` 
 
       const result = await sanityClient.fetch(query);
-      console.log(result[0])
+    
       if (result.length === 0) {
         const id = await createTent(user.email);
         tentId.current = id;
@@ -44,7 +44,7 @@ export default (props) => {
         const id = result[0]._id;
         tentId.current = id;
         if(result[0].images.length > 0) {
-          console.log('here 1')
+
           setImages(result[0].images)
         }
       }
@@ -170,7 +170,7 @@ export default (props) => {
                     // remove image from images array 
                     const newArr = removeArrayItem([...images], index)
                     setImages(newArr)
-                    console.log('here 3')
+                 
                     // remove image url form document
                     updateTent(tentId.current, {newArr})
                     // TODO: remove image from server 

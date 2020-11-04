@@ -10,7 +10,7 @@ export default (props) => {
   
   const user = useUser();
 
-  console.log(user)
+ 
 
   return (
     <>

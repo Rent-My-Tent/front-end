@@ -34,7 +34,7 @@ export default () => {
         const query = `*[ _type == 'tent' && published == true ]` 
         sanityClient.fetch(query)
         .then(response => {
-            console.log(response)
+           
             setTents(response)
         })
         .catch(error => {

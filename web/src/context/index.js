@@ -6,7 +6,7 @@ const tentPhotos = [{}];
 
 const reducer = (state, action) => {
   const newState = [...state];
-  console.log(action);
+ 
   switch (action.type) {
     case "ADD_UPLOADER":
       [...newState, {}];

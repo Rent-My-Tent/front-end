@@ -9,7 +9,7 @@ export default async (req, res) => {
 
     const { _id, data } = JSON.parse(req.body)
 
-    console.log(data)
+    
 
     sanityClient.patch(_id)
     .set({ ...data })

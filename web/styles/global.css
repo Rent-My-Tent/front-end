@@ -49,7 +49,7 @@ a{
     color: white!important;
     font-size: 18px!important;
 }
-input::placeholder{
+.box_index input::placeholder{
     color: #eee!important;
 }
 input:focus{
@@ -128,4 +128,16 @@ ul{
 }
 hr{
     opacity: 0.2;
+}
+
+.search-hoverable-menu{
+    display: none;
+    position: absolute;
+    border: 1px solid #eeee;
+    top: 10%;
+    box-shadow: 5px 5px 10px 10px rgba(128, 128, 128, 0.544);
+}
+.menu-wrapper:hover .search-hoverable-menu {
+    display: block;
+
 }

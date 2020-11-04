@@ -38,13 +38,10 @@ export default async (req, res) => {
           ])
           .commit();
       })
-      .then((result) => {
-        console.log('result');
-        console.log('success')
+      .then((result) => {       
         res.json(result);
       })
       .catch((err) => {
-        console.log('fail')
         console.log(err)
         res.json({result: err})
       });

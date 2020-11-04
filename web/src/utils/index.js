@@ -70,10 +70,12 @@ export const authUser = async (email, onConfirm) => {
   }
 }
 
-export const newReservation = async (tentId, email) => {
+export const newReservation = async (tentId, email, startDate, endDate) => {
   const body = {
     tentId,
-    email
+    email,
+    startDate,
+    endDate
   }
   const url = '/api/reservation'
 

@@ -10,7 +10,7 @@ export default async (req, res) => {
   
   const { owner } = JSON.parse(req.body)
   
-  console.log(owner)
+ 
 
   const data = await sanityClient.create({
     _type: 'tent', 
