@@ -3,12 +3,13 @@ body {
     padding: 0;
     background-color: #f5f5f5;
     margin-bottom: 4rem;
+
 }
-a{
+a {
     text-decoration: none;
     color: black;
 }
-.py-2{
+.py-2 {
     padding: 0 2.5rem;
 }
 #box-image {
@@ -18,8 +19,7 @@ a{
     background-size: 100% 700px;
     display: flex;
     align-items: center;
-    justify-content: center
-
+    justify-content: center;
 }
 .box_index {
     margin-top: -180px;
@@ -31,37 +31,36 @@ a{
     align-items: center;
     justify-content: space-between;
 }
-.light-green{
-    background: #6BA75C;
+.light-green {
+    background: #6ba75c;
 }
-.light-red{
-    background:#DD7052;
+.light-red {
+    background: #dd7052;
 }
 
 .box_index h5 {
-    color: white!important;
-    margin:0;
+    color: white !important;
+    margin: 0;
     padding: 0;
 }
 
-
 .box_index input {
-    color: white!important;
-    font-size: 18px!important;
+    color: white !important;
+    font-size: 18px !important;
 }
-.box_index input::placeholder{
-    color: #eee!important;
+.box_index input::placeholder {
+    color: #eee !important;
 }
-input:focus{
-    border: none!important;
-    box-shadow: none!important;
+input:focus {
+    border: none !important;
+    box-shadow: none !important;
 }
-input:active{
-    border: none!important;
-    box-shadow: none!important;
+input:active {
+    border: none !important;
+    box-shadow: none !important;
 }
-.full-with-column{
-    width: 100%; 
+.full-with-column {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -77,34 +76,34 @@ input:active{
 .flex-end {
     flex-direction: row-reverse;
 }
-.full-with{
+.full-with {
     width: 100%;
 }
 .rtl {
     direction: rtl;
 }
-.px-1{
+.px-1 {
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
-ul{
+ul {
     list-style: none;
     padding: 0;
 }
-.menu-container{
+.menu-container {
     font-size: 18px;
     position: relative;
 }
 .menu-title {
     cursor: pointer;
 }
-.menu-items{
+.menu-items {
     width: 200px;
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 0 4px 4px #eee;
     position: absolute;
-    left: -140px;  
+    left: -140px;
     top: 40px;
 }
 .menu-item {
@@ -119,18 +118,18 @@ ul{
     display: block;
 }
 
-.tent-card{
+.tent-card {
     margin-top: 3rem;
     background: white;
-    padding: 4px;   
+    padding: 4px;
     border-radius: 10px;
     box-shadow: 0 3px 5px 5px #eee;
 }
-hr{
+hr {
     opacity: 0.2;
 }
 
-.search-hoverable-menu{
+.search-hoverable-menu {
     display: none;
     position: absolute;
     border: 1px solid #eeee;
@@ -139,5 +138,25 @@ hr{
 }
 .menu-wrapper:hover .search-hoverable-menu {
     display: block;
-
 }
+.svg{
+    display: block;
+    max-width: 100%;
+    transform: rotate(-90deg);
+}
+  
+.svg-circle-bg {
+    fill: none;
+}
+  
+.svg-circle {
+    fill: none;
+}
+
+.svg-circle-text {
+    font-size: 2rem;
+    text-anchor: middle;
+    fill: rgb(154, 17, 17);
+    font-weight: bold;
+}
+  

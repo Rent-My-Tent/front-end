@@ -1,12 +1,9 @@
-
-
-
 export const accordion = {
     Content: {
         style: ({ $theme }) => {
-          return {
-            backgroundColor: $theme.colors.primaryB
-          };
-        }
-    }
+            return {
+                backgroundColor: $theme.colors.primaryB,
+            }
+        },
+    },
 }

@@ -1,21 +1,21 @@
-import Layout from "../components/layout";
-import { useUser } from "../utils/hooks";
+import Layout from '../components/layout'
+import { useUser } from '../utils/hooks'
 
 const Profile = () => {
-  const user = useUser({ redirectTo: "/login" });
+    const user = useUser({ redirectTo: '/login' })
 
-  return (
-    <Layout>
-      <h1>Profile</h1>
+    return (
+        <Layout>
+            <h1>Profile</h1>
 
-      {user && (
-        <>
-          <p>Your session:</p>
-          <pre>{JSON.stringify(user, null, 2)}</pre>
-        </>
-      )}
-    </Layout>
-  );
-};
+            {user && (
+                <>
+                    <p>Your session:</p>
+                    <pre>{JSON.stringify(user, null, 2)}</pre>
+                </>
+            )}
+        </Layout>
+    )
+}
 
-export default Profile;
+export default Profile

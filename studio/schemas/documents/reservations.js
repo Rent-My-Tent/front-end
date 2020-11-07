@@ -10,17 +10,17 @@ export default {
     },
     {
       name: 'tentId',
-      type: 'text',
+      type: 'string',
       title: 'Tent Id'
     },
 	{
 	  name: 'startDate',
-	  type: 'datetime',
-	  title: 'Start Date'
+	  type: 'string',
+	  title: 'Start Date',
 	},
 	{
 		name: 'endDate',
-		type: 'datetime',
+		type: 'string',
 		title: 'End Date'
 	}	
   ]

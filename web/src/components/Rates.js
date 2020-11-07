@@ -1,10 +1,7 @@
 import useSWR from 'swr'
 
+const fetchTent = (identifire) => {}
 
-const fetchTent = (identifire) => {
-    
-}
-
-export default ({identifire}) => {
-    const {data, error} = useSWR(identifire, fetchTent)
+export default ({ identifire }) => {
+    const { data, error } = useSWR(identifire, fetchTent)
 }

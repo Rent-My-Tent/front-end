@@ -8,6 +8,7 @@ export default {
       type: 'string',
       title: 'Owner'
     },
+
     {
       name: 'createdAt',
       type: 'datetime',
@@ -49,6 +50,34 @@ export default {
       type: 'array',
       title: 'Images',
       of: [{type: 'image'}]
+    },
+    {
+      name: 'reservations',
+      type: 'array',
+      title: 'Reservations',
+      of:[
+        {
+          title: 'reservation',
+          type: 'object',
+          fields: [
+            {
+              title: 'email',
+              name: 'email',
+              type : 'string',
+            },
+            {
+              title: 'StartDate',
+              name: 'startDate',
+              type: 'string'
+            },
+            {
+              title: 'EndDate',
+              name: 'endDate',
+              type: 'string'
+            }
+          ]
+        }
+      ] 
     },
     {
       name: 'price',
